@@ -201,7 +201,7 @@ orderPopup.addEventListener('click', () => {
     orderDetails.innerHTML = '';
     const orderProduct = document.querySelectorAll('.product');
 
-    // Build each product's details for thee order confirmation
+    // Build each product's details for the order confirmation
     orderProduct.forEach((product) => {
         const name = product.querySelector('h3').textContent.trim();
         const productQuantity = product.querySelector('.cart-multiplier').textContent;
@@ -220,7 +220,7 @@ orderPopup.addEventListener('click', () => {
         const orderItemHTML = `
             <div class="order-item">
                 <div class="order-detail">
-                    <img src="${imageSrc}" alt="${name}" style="width: 30px; height: 30px; border-radius: 5px;">
+                    <img src="${imageSrc}" alt="${name}">
                     <div class="order-detail-header">
                         <h3>${name}</h3>
                         <div class="quantity-price">
